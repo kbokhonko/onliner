@@ -32,4 +32,5 @@ Helper for online users list:
 ## Requirement
 
   * Redis;
+  
 	* Devise;

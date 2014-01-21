@@ -33,4 +33,4 @@ Helper for online users list:
 
   * Redis;
   
-	* Devise;
+  * Devise;

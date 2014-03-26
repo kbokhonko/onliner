@@ -26,7 +26,7 @@ For using functionality add to ApplicationControler:
 and In your model, add :lastseenable as such:
 
 	class User < ActiveRecord::Base
-		devise ..., :lastseenable
+		devise ..., :onliner
 	end
 
 Helper for online users list:

@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.version       = Onliner::VERSION
   spec.authors       = ["kbokhonko"]
   spec.email         = ["kolya.bokhonko@gmail.com"]
-  spec.description   = "Who's online"
-  spec.summary       = %q{Who's online}
+  spec.description   = "Gem for Rails application - provides you list of online users (for authentication gem 'devise')"
+  spec.summary       = %q{Gem for Rails application - provides you list of online users (for authentication gem 'devise')}
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

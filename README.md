@@ -21,13 +21,17 @@ For installing gem to your app run:
 
 For using functionality add to ApplicationControler:
 
-	include Onliner
-  	
-  	before_filter { |c| c.track_user current_user unless current_user.nil?} 
+	before_filter { |c| current_user.track unless current_user.nil?}
+
+and In your model, add :lastseenable as such:
+
+	class User < ActiveRecord::Base
+		devise ..., :lastseenable
+	end
 
 Helper for online users list:
 
-	online_users
+	Model.online, e.g. User.online, Admin.online
 
 ## Requirement
 

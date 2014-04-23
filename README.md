@@ -23,7 +23,7 @@ For using functionality add to ApplicationControler:
 
 	before_filter { |c| current_user.track unless current_user.nil?}
 
-and In your model, add :lastseenable as such:
+and In your model, add :onliner module as such:
 
 	class User < ActiveRecord::Base
 		devise ..., :onliner

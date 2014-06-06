@@ -42,6 +42,8 @@ In this version I have modified the time to consider a user still online to
 this more easily customizable by users.
 
 I have also modified the code to work more easily with RedisToGo on Heroku.
+It now works with RedisToGo on Heroku, it needed the password to be parsed,
+now it is.
 
 ## Requirement
 

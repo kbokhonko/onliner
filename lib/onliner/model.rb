@@ -4,9 +4,9 @@ module Devise
       extend ActiveSupport::Concern
 
       module ClassMethods
-        def online 
-          array_ids = []    
-          online_array = REDISFORONLINER.hgetall "o_#{self.to_s.downcase.pluralize}"
+        def online
+          array_ids = []
+          online_array = REDIS.hgetall "o_#{self.to_s.downcase.pluralize}"
 
           online_array.each do |k, v|
             if (Time.now - v.to_time <= 15)
@@ -19,7 +19,7 @@ module Devise
       end      
 
       def track
-        REDISFORONLINER.mapped_hmset "o_#{self.class.to_s.downcase.pluralize}", { id.to_s => "#{Time.now}" }
+        REDIS.mapped_hmset "o_#{self.class.to_s.downcase.pluralize}", { id.to_s => "#{Time.now}" }
       end
     end
   end

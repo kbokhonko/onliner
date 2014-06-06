@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.name          = "onliner"
   spec.platform    = Gem::Platform::RUBY
   spec.version       = Onliner::VERSION
-  spec.authors       = ["kbokhonko"]
-  spec.email         = ["kolya.bokhonko@gmail.com"]
+  spec.authors       = ["Todd Nestor"]
+  spec.email         = ["todd.nestor@gmail.com"]
   spec.description   = "Gem for Rails application - provides you list of online users (for authentication gem 'devise')"
   spec.summary       = %q{Gem for Rails application - provides you list of online users (for authentication gem 'devise')}
   spec.license       = "MIT"

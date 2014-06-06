@@ -6,4 +6,4 @@ else
 	uri = URI.parse(ENV["REDISTOGO_URL"])
 end
 
-REDISFORONLINER = Redis.new(:host => uri.host, :port => uri.port)
+REDIS = Redis.new(:host => uri.host, :port => uri.port)

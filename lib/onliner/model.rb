@@ -9,7 +9,7 @@ module Devise
           online_array = REDIS.hgetall "o_#{self.to_s.downcase.pluralize}"
 
           online_array.each do |k, v|
-            if (Time.now - v.to_time <= 300)
+            if (Time.now - v.to_time <= 15)
               array_ids << k.to_i 
             end 
           end

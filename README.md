@@ -9,7 +9,7 @@ Gem for Rails application - provides you list of online users (for authenticatio
 
 Add this line to your application's Gemfile:
 
-    gem 'onliner'
+    gem 'onliner-by-todd'
 
 And then execute:
 
@@ -17,7 +17,7 @@ And then execute:
 
 Next you have to run this to make it install the initializer
 
-    $ rails g onliner:install 
+    $ rails g onliner-by-todd:install 
 
 ## Usage
 
@@ -25,10 +25,10 @@ For using functionality add to ApplicationControler:
 
 	before_filter { |c| current_user.track unless current_user.nil?}
 
-and In your model, add :onliner to the current devise line at the end:
+and In your model, add :onliner-by-todd to the current devise line at the end:
 
 	class User < ActiveRecord::Base
-		devise ..., :onliner
+		devise ..., :onliner-by-todd
 	end
 
 Helper for online users list (for the whole list, not just an individual):
@@ -50,12 +50,12 @@ now it is.
 Tasks for future versions:
 
 	[] Allow users to customize the time for a user to be considered online
-		[] Make the onliner.rb accept a variable for the time
+		[] Make the onliner-by-todd.rb accept a variable for the time
 		[] Make that variable default to 15 seconds if not set
 		[] Provide instructions for how a user can override the default
 	[] Have software ignore Redis errors so if this gem doesn't work it doesn't break the app
 		[] Add an exception for if REDIS isn't set or is unreachable
-		[] Have onliner notify the user (either a flash message or an e-mail)
+		[] Have onliner-by-todd notify the user (either a flash message or an e-mail)
 		[] make that notification message alterable (and the destination alterable)
 		
 		* This is mainly because if you hit your limit for your current RedisToGo plan or other applicable plan it would currently break the whole app

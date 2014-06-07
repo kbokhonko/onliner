@@ -1,6 +1,6 @@
 module Devise
   module Models
-    module Onliner
+    module OnlinerByTodd
       extend ActiveSupport::Concern
 
       module ClassMethods
@@ -16,7 +16,7 @@ module Devise
 
           self.find( array_ids )
         end
-      end      
+      end
 
       def track
         REDIS.mapped_hmset "o_#{self.class.to_s.downcase.pluralize}", { id.to_s => "#{Time.now}" }

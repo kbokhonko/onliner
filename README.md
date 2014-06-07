@@ -1,4 +1,6 @@
-# Onliner
+# Onliner-by-todd
+# Built off of the onliner gem, but renamed so I could deploy it on rubygems,
+# this version plays nice with Heroku and RedisToGo, as of June 6, 2014.
 
 
 Gem for Rails application - provides you list of online users (for authentication gem 'devise')

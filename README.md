@@ -1,6 +1,7 @@
-# Onliner-by-todd
-# Built off of the onliner gem, but renamed so I could deploy it on rubygems,
-# this version plays nice with Heroku and RedisToGo, as of June 6, 2014.
+# Onlinerbytodd
+
+* Built off of the onliner gem, but renamed so I could deploy it on rubygems,
+* this version plays nice with Heroku and RedisToGo, as of June 6, 2014.
 
 
 Gem for Rails application - provides you list of online users (for authentication gem 'devise')
@@ -9,7 +10,7 @@ Gem for Rails application - provides you list of online users (for authenticatio
 
 Add this line to your application's Gemfile:
 
-    gem 'onliner-by-todd'
+    gem 'onlinerbytodd'
 
 And then execute:
 
@@ -17,7 +18,7 @@ And then execute:
 
 Next you have to run this to make it install the initializer
 
-    $ rails g onliner-by-todd:install 
+    $ rails g onlinerbytodd:install 
 
 ## Usage
 
@@ -50,12 +51,12 @@ now it is.
 Tasks for future versions:
 
 	[] Allow users to customize the time for a user to be considered online
-		[] Make the onliner-by-todd.rb accept a variable for the time
+		[] Make the onlinerbytodd.rb accept a variable for the time
 		[] Make that variable default to 15 seconds if not set
 		[] Provide instructions for how a user can override the default
 	[] Have software ignore Redis errors so if this gem doesn't work it doesn't break the app
 		[] Add an exception for if REDIS isn't set or is unreachable
-		[] Have onliner-by-todd notify the user (either a flash message or an e-mail)
+		[] Have onlinerbytodd notify the user (either a flash message or an e-mail)
 		[] make that notification message alterable (and the destination alterable)
 		
 		* This is mainly because if you hit your limit for your current RedisToGo plan or other applicable plan it would currently break the whole app

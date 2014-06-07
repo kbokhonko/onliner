@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'onliner-by-todd/version'
+require 'onlinerbytodd/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "onliner-by-todd"
+  spec.name          = "onlinerbytodd"
   spec.platform    = Gem::Platform::RUBY
   spec.version       = Onlinerbytodd::VERSION
   spec.authors       = ["Todd Nestor"]

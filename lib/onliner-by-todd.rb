@@ -6,7 +6,7 @@ end
 
 require 'onliner-by-todd'
 
-Devise.add_module :onlinerbytodd, :model => 'onlinerbytodd/model'
+Devise.add_module :onlinerbytodd, :model => 'onliner-by-todd/model'
 
 module OnlinerByTodd
 end

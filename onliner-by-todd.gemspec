@@ -6,7 +6,7 @@ require 'onliner-by-todd/version'
 Gem::Specification.new do |spec|
   spec.name          = "onliner-by-todd"
   spec.platform    = Gem::Platform::RUBY
-  spec.version       = OnlinerByTodd::VERSION
+  spec.version       = Onlinerbytodd::VERSION
   spec.authors       = ["Todd Nestor"]
   spec.email         = ["todd.nestor@gmail.com"]
   spec.description   = "Gem for Rails application - provides you list of online users (for authentication gem 'devise')"

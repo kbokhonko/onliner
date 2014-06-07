@@ -1,6 +1,6 @@
 module Devise
   module Models
-    module OnlinerByTodd
+    module Onlinerbytodd
       extend ActiveSupport::Concern
 
       module ClassMethods

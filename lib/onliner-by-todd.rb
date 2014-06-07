@@ -8,6 +8,6 @@ require 'onliner-by-todd'
 
 Devise.add_module :onlinerbytodd, :model => 'onliner-by-todd/model'
 
-module OnlinerByTodd
+module Onlinerbytodd
 end
 

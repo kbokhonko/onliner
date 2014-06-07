@@ -20,6 +20,13 @@ Next you have to run this to make it install the initializer
 
     $ rails g onlinerbytodd:install 
 
+*Note: if you are doing this on a Heroku server run the following command:
+
+	$ heroku run rails g onlinerbytodd:install
+
+Do not do a run:detached as it prompts you and you will have to manually
+terminate the process if you run:detached.
+
 ## Usage
 
 For using functionality add to ApplicationControler:

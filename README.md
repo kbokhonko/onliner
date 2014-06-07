@@ -28,7 +28,7 @@ For using functionality add to ApplicationControler:
 and In your model, add :onliner-by-todd to the current devise line at the end:
 
 	class User < ActiveRecord::Base
-		devise ..., :onliner-by-todd
+		devise ..., :onlinerbytodd
 	end
 
 Helper for online users list (for the whole list, not just an individual):

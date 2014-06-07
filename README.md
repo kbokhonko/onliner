@@ -57,14 +57,14 @@ now it is.
 
 Tasks for future versions:
 
-	[] Allow users to customize the time for a user to be considered online
-		[] Make the onlinerbytodd.rb accept a variable for the time
-		[] Make that variable default to 15 seconds if not set
-		[] Provide instructions for how a user can override the default
-	[] Have software ignore Redis errors so if this gem doesn't work it doesn't break the app
-		[] Add an exception for if REDIS isn't set or is unreachable
-		[] Have onlinerbytodd notify the user (either a flash message or an e-mail)
-		[] make that notification message alterable (and the destination alterable)
+- [ ] Allow users to customize the time for a user to be considered online
+	- [ ] Make the onlinerbytodd.rb accept a variable for the time
+	- [ ] Make that variable default to 15 seconds if not set
+	- [ ] Provide instructions for how a user can override the default
+- [ ] Have software ignore Redis errors so if this gem doesn't work it doesn't break the app
+	- [ ] Add an exception for if REDIS isn't set or is unreachable
+	- [ ] Have onlinerbytodd notify the user (either a flash message or an e-mail)
+	- [ ] make that notification message alterable (and the destination alterable)
 		
 		* This is mainly because if you hit your limit for your current RedisToGo plan or other applicable plan it would currently break the whole app
 		* If we have this gem send the user an e-mail or something, or set a flash message, then the user can know what is going on and can fix it

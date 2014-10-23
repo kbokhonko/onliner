@@ -47,9 +47,12 @@ To see if a user is online you would run something like this:
 
 	User.online.include?(user)
 
-In this version I have modified the time to consider a user still online to 
-15 seconds, previously it was 300 seconds.  In a future version I will make
-this more easily customizable by users.
+Now you can override the default time to check for user activity.  It defaults
+to 15 seconds (i.e. if the user hasn't done anything for 15 seconds they are
+not considered online).  To override this with say 30 seconds you would do the
+following:
+
+	User.online(30).include?(user)
 
 I have also modified the code to work more easily with RedisToGo on Heroku.
 It now works with RedisToGo on Heroku, it needed the password to be parsed,
@@ -57,10 +60,10 @@ now it is.
 
 Tasks for future versions:
 
-- [ ] Allow users to customize the time for a user to be considered online
-	- [ ] Make the onlinerbytodd.rb accept a variable for the time
-	- [ ] Make that variable default to 15 seconds if not set
-	- [ ] Provide instructions for how a user can override the default
+- [x] Allow users to customize the time for a user to be considered online
+	- [x] Make the onlinerbytodd.rb accept a variable for the time
+	- [x] Make that variable default to 15 seconds if not set
+	- [x] Provide instructions for how a user can override the default
 - [ ] Have software ignore Redis errors so if this gem doesn't work it doesn't break the app
 	- [ ] Add an exception for if REDIS isn't set or is unreachable
 	- [ ] Have onlinerbytodd notify the user (either a flash message or an e-mail)

@@ -4,22 +4,26 @@ module Devise
       extend ActiveSupport::Concern
 
       module ClassMethods
-        def online
-          array_ids = []
-          online_array = REDIS.hgetall "o_#{self.to_s.downcase.pluralize}"
+        def online(time=15)
+          if defined?(REDIS)
+            array_ids = []
+            online_array = REDIS.hgetall "o_#{self.to_s.downcase.pluralize}"
 
-          online_array.each do |k, v|
-            if (Time.now - v.to_time <= 15)
-              array_ids << k.to_i 
-            end 
+            online_array.each do |k, v|
+              if (Time.now - v.to_time <= time)
+                array_ids << k.to_i 
+              end 
+            end
+
+            self.find( array_ids )
           end
-
-          self.find( array_ids )
         end
       end
 
       def track
-        REDIS.mapped_hmset "o_#{self.class.to_s.downcase.pluralize}", { id.to_s => "#{Time.now}" }
+        if defined?(REDIS)
+          REDIS.mapped_hmset "o_#{self.class.to_s.downcase.pluralize}", { id.to_s => "#{Time.now}" }
+        end
       end
     end
   end

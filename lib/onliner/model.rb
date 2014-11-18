@@ -1,6 +1,6 @@
 module Devise
   module Models
-    module Onlinerbytodd
+    module Onliner
       extend ActiveSupport::Concern
 
       module ClassMethods
@@ -11,8 +11,8 @@ module Devise
 
             online_array.each do |k, v|
               if (Time.now - v.to_time <= time)
-                array_ids << k.to_i 
-              end 
+                array_ids << k.to_i
+              end
             end
 
             self.find( array_ids )

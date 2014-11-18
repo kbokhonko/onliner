@@ -1,14 +1,14 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'onlinerbytodd/version'
+require 'onliner/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "onlinerbytodd"
+  spec.name          = "onliner"
   spec.platform    = Gem::Platform::RUBY
-  spec.version       = Onlinerbytodd::VERSION
-  spec.authors       = ["Todd Nestor"]
-  spec.email         = ["todd.nestor@gmail.com"]
+  spec.version       = onliner::VERSION
+  spec.authors       = ["kbokhonko", "Todd Nestor"]
+  spec.email         = ["kolya.bokhonko@gmail.com", "todd.nestor@gmail.com"]
   spec.description   = "Gem for Rails application - provides you list of online users (for authentication gem 'devise')"
   spec.summary       = %q{Gem for Rails application - provides you list of online users (for authentication gem 'devise'), built off of the onliner gem}
   spec.license       = "MIT"

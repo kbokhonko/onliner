@@ -1,4 +1,4 @@
-Copyright (c) 2014 kbokhonko
+Copyright (c) 2014 Todd Nestor
 
 MIT License
 

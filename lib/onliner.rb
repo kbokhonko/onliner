@@ -8,6 +8,6 @@ require 'onliner'
 
 Devise.add_module :onliner, :model => 'onliner/model'
 
-module onliner
+module Onliner
 end
 

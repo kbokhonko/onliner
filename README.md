@@ -28,7 +28,7 @@ For using functionality add to ApplicationControler:
 
 	before_filter { |c| current_user.track unless current_user.nil?}
 
-and In your model, add :onliner-by-todd to the current devise line at the end:
+and In your model, add :onliner to the current devise line at the end:
 
 	class User < ActiveRecord::Base
 		devise ..., :onliner

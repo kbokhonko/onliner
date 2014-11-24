@@ -42,15 +42,14 @@ To see if a user is online you would run something like this:
 
 	User.online.include?(user)
 
-Now you can override the default time to check for user activity.  It defaults
+You can override the default time to check for user activity.  It defaults
 to 15 seconds (i.e. if the user hasn't done anything for 15 seconds they are
 not considered online).  To override this with say 30 seconds you would do the
 following:
 
 	User.online(30).include?(user)
 
-I have also modified the code to work more easily with RedisToGo on Heroku.
-It now works with RedisToGo on Heroku, it needed the password to be parsed,
+It works with RedisToGo on Heroku, it needed the password to be parsed,
 now it is.
 
 Tasks for future versions:

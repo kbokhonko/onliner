@@ -54,6 +54,7 @@ now it is.
 
 Tasks for future versions:
 
+- [ ] Writing RSpec tests
 - [x] Allow users to customize the time for a user to be considered online
 	- [x] Make the onliner.rb accept a variable for the time
 	- [x] Make that variable default to 15 seconds if not set
@@ -72,3 +73,6 @@ Tasks for future versions:
   	to make sure you have it on your server, for Heroku I recommend RedisToGo.
   
   * Devise;
+
+## Requirement
+  Feel free to implement them and contribute, if you wish

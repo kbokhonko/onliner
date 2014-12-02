@@ -74,5 +74,5 @@ Tasks for future versions:
   
   * Devise;
 
-## Requirement
+## Tests
   Feel free to implement them and contribute, if you wish
